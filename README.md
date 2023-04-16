@@ -5,21 +5,21 @@ Guide: https://guimaker.app
 Project description: https://guimaker.pro/demoprojects
 
 
-## 1 Project setup
-Download the project to your pc
-Copy your database config to the firebase-config.json file
-Edit the environment variables in dash.env
-Use the 'scp' command to copy the project folder to the Raspberry Pi
-Run the setup.sh file to complete the setup 
+## Project setup
+- Download the project to your pc
+- Copy your database config to the firebase-config.json file
+- Edit the environment variables in dash.env
+- Copy the project folder to the Raspberry Pi
+- Run the setup.sh file to complete the setup 
 
-## 2 Copy the Firbase database config
+## 1 Copy the Firbase database config
 - Log in to the Firebase console
 - Go to Project Settings, then scroll down
 - Copy the key-pairs to the the firebase-config.json 
 
 setup.sh will add double quotes to the keys to make the file a valid json file
 
-## 3 Edit dash.env 
+## 2 Edit dash.env 
 Complete or edit the values for:
 - EMAIL=
 - PASSWORD=
@@ -33,14 +33,14 @@ The Arduino should attached to the USB port ttyACM0 of the Raspberry Pi.
 You can run the command 'dmesg | grep' on the Raspberry Pi to be sure in case if you 
 have more than on device attached to the Raspberry Pi
 
-## 4 Copy the project folder to the raspberry Pi
+## 3 Copy the project folder to the raspberry Pi
 Let's say:
 - The destination folder on the Pi is /home/pi
 - The Pi ip address is 10.0.0.30
 - username is 'pi'
 Run:  scp -r led pi@10.0.0.30:/home/pi
 
-## 5 Run the setup.sh script to complete the setup
+## 4 Run the setup.sh script to complete the setup
 SSH to the raspberry then cd to your project folder and run:
 bash setup.sh
 
