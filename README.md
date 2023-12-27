@@ -9,7 +9,7 @@ Find the guide to the Gui Maker app here: https://guimaker.app
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/led-connected.png" alt="Dashboard" width="300" height = "250"/>
 
-## Project name: Switch on/off a led attached to an Arduino Uno
+## Project name: Switch a led on/off
 Read the project details first here: https://guimaker.pro/demoprojects
 
 ## Project setup
