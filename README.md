@@ -5,6 +5,8 @@ control a remote webcam
 Find the guide to the Gui Maker app here: https://guimaker.app
 
 &nbsp;&nbsp;&nbsp;
+<img src="images/led-dashboard.png" alt="Dashboard" width="200" height = "350"/>
+&nbsp;&nbsp;&nbsp;
 <img src="images/led-connected.png" alt="Dashboard" width="500" height = "350"/>
 
 ## Project name: Switch a led on/off
