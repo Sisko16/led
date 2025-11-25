@@ -1,6 +1,6 @@
 <h1 style="color:#1589F0;">Demo Project</h1>
-In this project you will use the Gui Maker mobile app to 
-control a remote webcam
+In this project you will use the GUI-Maker mobile app to 
+remotely switch a led on/off
 
 Find the guide to the Gui Maker app here: https://guimaker.app
 
@@ -13,19 +13,26 @@ Find the guide to the Gui Maker app here: https://guimaker.app
 Read the project details first here: https://guimaker.pro/demoprojects
 
 ## Project setup
-First download the project to your pc, next
+First clone/download the project to your pc, next
 1. Copy your database config to the firebase-config.json file
 2. Edit the key-filename.json
 3. Edit the environment variables in dash.env
 4. Copy the project folder to your Raspbery Pi
 5. SSH to your Raspberry Pi and run the setup.sh script to complete the setup
 
-## 1 Copy the Firbase database config
+## 1 Copy the web app's Firbase configuration to your project
 - Log in to the Firebase console
-- Go to Project Settings, then scroll down
- Copy the key-value pairs along with the curly brackets to the the firebase-config.json
+- Go to Project Settings > General,
+- Scroll down to:  //Your web app's Firebase configuration
+- Copy the key-value pairs along with the curly brackets
+- Paste to the firebase-config.json located in your project folder
 
-Note: setup.sh will wrap the keys with double quotes to make the firebase-config.json a valid json file
+&nbsp;&nbsp;&nbsp;
+<img src="images/firebase-connect1.png" alt="Dashboard" width="200" height = "400"/>
+&nbsp;&nbsp;&nbsp;
+<img src="images/firebase-connect2.png" alt="Dashboard" width="200" height = "400"/>
+
+**Note:** setup.sh will wrap the keys with double quotes to make the firebase-config.json a valid json file
 
 ## 2 Edit dash.env 
 Complete or edit the values for:
@@ -47,13 +54,17 @@ Let's say:
 - The destination folder on the Pi is /home/pi
 - The Pi ip address is 10.0.0.30
 
-Run:  ``` scp -r led pi@10.0.0.30:/home/pi ```
+Run:  
+``` 
+scp -r led pi@10.0.0.30:/home/pi 
+```
 
 ## 4 Run the setup.sh script to complete the setup
 SSH to the raspberry then cd to your project folder and run:
+```
 bash setup.sh
-
-The script will:
+```
+**Note: The script will:**
 - Set the project name to the project folder name
 - Set the project description
 - Install the dependencies
@@ -88,3 +99,4 @@ Check the path and filenames are correctly spelled in:
   - led.service
 
   Keep in mind that Dashboard names created in the mobile app are case sensitive
+
